@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Beam01_Add
-  m_Shader: {fileID: -6465566751694194690, guid: eabe22e6f9b1f2846aa74d7344079ec8, type: 3}
+  m_Name: Particle
+  m_Shader: {fileID: -6465566751694194690, guid: 5bc6222bde84baf4cb067fd908c8f8f0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -22,15 +22,12 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - DepthOnly
+  - SHADOWCASTER
   - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 9bbc8ef67f99202419bbecd8f41c555f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -47,11 +44,12 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Blend: 2
-    - _CastShadows: 1
-    - _Cull: 0
-    - _DstBlend: 1
-    - _DstBlendAlpha: 1
+    - _Blend: 0
+    - _CastShadows: 0
+    - _Cull: 2
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _Particle_Size: 0.678
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
@@ -61,10 +59,10 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 16, g: 16, b: 16, a: 1}
+    - _Color: {r: 8.47419, g: 8.47419, b: 8.47419, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &317434868576977166
+--- !u!114 &7296495544562354152
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
